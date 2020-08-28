@@ -53,10 +53,12 @@ function game() {
     }
     if (playerWins > computerWins) {
         console.log(`You win with a score of: ${playerWins}, computer loses with a score of ${computerWins}`)
-    } else {
+    } else if (playerWins < computerWins) {
         console.log(`Computer wins with a score of ${computerWins}, player loses with a score of ${playerWins}`);
+    } else {
+        console.log(`It's draw: computer get ${computerWins}; player gets: ${playerWins}`)
     }
     // console.log(computerWins, playerWins);
 }
-console.log(game());
+game();
               
